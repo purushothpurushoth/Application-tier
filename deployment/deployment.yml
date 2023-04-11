@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-application-01
-          image: purushothshanmugam/spring-02:latest
+          image: spring-02:latest
           ports:
             - name: spring-app 
               containerPort: 8080
