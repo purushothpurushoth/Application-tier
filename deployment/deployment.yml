@@ -17,4 +17,4 @@ spec:
           image: purushothshanmugam/spring-application:version-01
           ports:
             - name: spring-app 
-              containerPort: 80
+              containerPort: 8080

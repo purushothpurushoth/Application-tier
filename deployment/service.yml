@@ -7,5 +7,4 @@ spec:
     app: spring-01
   type: LoadBalancer
   ports:
-    - port: 80
       targetPort: 8080 
