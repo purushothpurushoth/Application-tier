@@ -16,6 +16,10 @@ public class NewspringApplication {
 	public String welcome(){
 		return "hello spring";
 	}
+	@GetMapping(value = "/testing")
+	public String working(){
+		return "working";
+	}
     
 	
 }

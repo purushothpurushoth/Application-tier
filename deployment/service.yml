@@ -1,12 +1,14 @@
+
 apiVersion: v1
 kind: Service
 metadata:
-  name: angular-application-nodeport-service
+  name: spring-application-nodeport-service
 spec:
   selector:
-    app: angular-01
-  type: LoadBalancer
+    app: spring-01
+  type: NodePort
   ports:
-    - port: 8080
-      targetPort: 8080 
-      
+    - name: http
+      nodePort: 32134
+      port: 8080
+      targetPort: 8080

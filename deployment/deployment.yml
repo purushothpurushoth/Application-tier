@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-application-01
-          image: public.ecr.aws/e4a0x4z6/testing-01:latest-01
+          image: public.ecr.aws/e4a0x4z6/testing-02:latest
           ports:
             - name: spring-app 
               containerPort: 8080
