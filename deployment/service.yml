@@ -7,5 +7,6 @@ spec:
     app: angular-01
   type: NodePort
   ports:
-    - targetPort: 8080 
-      nodePort: 32134
+    - nodePort: 32134 
+      Port: 8080 
+      
