@@ -18,7 +18,7 @@ public class NewspringApplication {
 	}
 	@GetMapping(value = "/testing")
 	public String working(){
-		return "working";
+		return "correctly-working";
 	}
     
 	
