@@ -5,8 +5,7 @@ metadata:
 spec:
   selector:
     app: angular-01
-  type: NodePort
+  type: LoadBalancer
   ports:
-    - nodePort: 32134 
-      Port: 8080 
+    - targetPort: 8080 
       
