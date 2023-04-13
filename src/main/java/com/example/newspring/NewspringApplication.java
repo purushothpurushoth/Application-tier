@@ -16,9 +16,9 @@ public class NewspringApplication {
 	public String welcome(){
 		return "hello spring";
 	}
-	@GetMapping(value = "/testing2")
+	@GetMapping(value = "/testing1")
 	public String working(){
-		return "correctly-working";
+		return "working";
 	}
     
 	
