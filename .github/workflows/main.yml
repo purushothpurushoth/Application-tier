@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: master
+    branches: [master]
 
 jobs:
   Deploy:
@@ -31,3 +31,4 @@ jobs:
               sudo npm run build &&
               sudo pm2 stop ./dist/index.js &&
               sudo pm2 start ./dist/index.js
+              '
