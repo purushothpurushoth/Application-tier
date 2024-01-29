@@ -8,6 +8,8 @@ on:
 jobs:
   ssh:
     runs-on: ubuntu-latest
+    env:
+      SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
     steps:
     - name: Checkout Repository
