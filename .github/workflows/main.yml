@@ -1,0 +1,29 @@
+name: Pull remote
+on:
+  workflow_dispatch:
+    # inputs:
+    #   # IP address of the venue machine
+    #   host:
+    #     description: 'SSH host for the remote machine'
+    #     required: true
+    #   # username of the remote machine
+      # user:
+      #   description: 'SSH user for authentication'
+      #   required: true
+jobs:
+  git-pull:
+    runs-on: ubuntu-latest
+    steps:
+    # checkout the code
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Deploying Script
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ 54.221.164.28 }}
+        username: ${{ ubuntu }}
+        password: ${{ AAAAB3NzaC1yc2EAAAADAQABAAABgQChXpSDlGHAt6mZyaY1bKAeU06XvGEy7v2e8HmXhMV3m5IuV0zq4GQoGXZLeLZQ9MLZFH2zEaNTeF1eiZ9tO3GmFn5zSm/gHJ7bWlIEC1/Bc+8jeindHvFWVCgjmMwapByd+6539AM8Alk1BmeT4MJqdFuBFt7T+IXf2geeP6p1C69sprbXiGW8aB7+hL7MM1yL/Wa3oCYo4CiEOkri/22X/9rkY7wD1pwXqlLWi6jS2fcyrKydJqA9bnaSXP42G9zPF+scbisM1LqWxv/hOH9f62AAMg4dccvXlPbJpQEU15UDYJy74MENQs4f7LBa2Fx5cM0L5anx2rmTHKUYAOyGJzyhTvea3OofB7r0QddHVL5XnyVF1zIbx5mc3bTb2TbfGaxG08HeLSbewkW4knT9A/vDvFIxl2bvgvsiMxBPN9d/SCvwVHfo60+R5ZrWEwebJeezNKBsC7s+cOPnDw6eWKnQdStlZY0XKMGQNBiBsqFFRHCIydBgNlU1LtruCz0= ideas2it\purushothaman.s@I22249 }}
+        port: 22
+        timeout: 300s
+    
+    
