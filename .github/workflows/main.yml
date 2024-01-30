@@ -19,6 +19,6 @@ jobs:
 
         run: |
           echo "$PRIVATE_KEY" > private_key && chmod u+rwx private_key
-          ssh -i private_key ubuntu@54.221.164.2
+          ssh -i private_key ubuntu@ec2-44-203-161-93.compute-1.amazonaws.com
 
               '
